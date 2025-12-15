@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Vite cache
+.vite/
+
+# Uploads 
+backend/uploads/

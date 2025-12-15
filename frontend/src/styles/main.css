@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+
+
+.container {
+  width: 100%;
+  padding: 16px;
+}
+
+.card,
+form {
+  background: #ffffff;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* LINKS */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CENTER TEXT */
+.center-box {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* PROFILE */
+.profile-img {
+  display: block;
+  margin: 0 auto 16px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* USERS LIST */
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-item {
+  padding: 10px;
+  border-radius: 6px;
+  background: #f9fafb;
+  font-size: 14px;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+
+
+@media (min-width: 640px) {
+  .card,
+  form {
+    max-width: 500px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card,
+  form {
+    max-width: 560px;
+  }
+}
+
+/* HEADER */
+.header {
+  background: #111827;
+  color: white;
+  padding: 12px 16px;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav a {
+  color: white;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #ef4444;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* FOOTER */
+.footer {
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+}
+
+
+/* RESPONSIVE HEADER */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* APP LAYOUT */
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
