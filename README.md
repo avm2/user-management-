@@ -65,3 +65,29 @@ This project implements secure authentication, role-based access control, email 
 git clone <repository-url>
 cd user
 
+2️⃣ Backend Setup
+cd backend
+npm install
+Create a .env file using .env.example as reference.
+Run the backend: npm run dev
+Backend runs on: http://localhost:5000
+
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+Frontend runs on: http://localhost:5173
+
+#Test Credentials / Flow
+
+Register a new user
+Verify email using the verification link
+Login with verified credentials
+
+ # To Test ADMIN Role
+Update the role directly in the database:
+UPDATE Users
+SET role = 'ADMIN'
+WHERE email = 'admin@email.com';
+
+
