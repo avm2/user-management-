@@ -59,32 +59,31 @@ This project implements secure authentication, role-based access control, email 
 =============================================================================================
 ## ⚙️ Setup Instructions
 
-1️⃣ Clone Repository
+**1️⃣ Clone Repository**
 -git clone <repository-url>
 -cd user
 
-2️⃣ Backend Setup
+**2️⃣ Backend Setup**
 -cd backend
 -npm install
 -Create .env using .env.example.
 -Run backend: npm run dev
 -Backend runs on: http://localhost:5000
 
-3️⃣ Frontend Setup
+**3️⃣ Frontend Setup**
 -cd frontend
 -npm install
 -npm run dev
+-Frontend runs on: http://localhost:5173
 
-Frontend runs on: http://localhost:5173
 
-
-## Test Credentials
+** ## Test Credentials**
 -Register a new user
 -Verify email
 -Login
 -To test ADMIN role, update role in database: UPDATE Users SET role='ADMIN' WHERE email='admin@email.com'
 
-##RBAC Explanation
+** ##RBAC Explanation **
 -Roles are stored in the database and embedded into JWT tokens.
 -Authorization is enforced via backend middleware, not the frontend UI.
 
